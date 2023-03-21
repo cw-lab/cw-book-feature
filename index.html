@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天下雜誌出版策展平台</title>
+  <link rel="shortcut icon" href="https://books.cw.com.tw/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/feature.css">
+  <link rel="stylesheet" href="assets/css/web2lead.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+</head>
+<body>
+  <header>
+    <div class="container px-md-30">
+      <button type="button" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/" class="brand">
+        <img src="assets/images/logo.svg" alt="天下雜誌出版 Logo">
+      </a>
+      <nav class="menu">
+        <ul class="master">
+          <li>
+            <button type="button">
+              最新動態
+            </button>
+          </li>
+          <li>
+            <span>書籍</span>
+            <button type="button" class="open-block"><i class="icon icon-arrow-down"></i></button> 
+            <div class="block">
+              <div class="container py-30">
+                <div class="anchor">
+                  <button type="button" class="btn btn-outlined btn-primary">
+                    最新動態
+                  </button>
+                </div>
+                <div class="recommend">
+                  <ul>
+                    <li><a href="/books/1" class="btn btn-contained btn-white">財經趨勢</a></li>
+                    <li><a href="/books/3" class="btn btn-contained btn-white">經營管理</a></li>
+                    <li><a href="/books/2" class="btn btn-contained btn-white">科技創新</a></li>
+                    <li><a href="/books/6" class="btn btn-contained btn-white">心理勵志</a></li>
+                    <li><a href="/books/9" class="btn btn-contained btn-white">人文科普</a></li>
+                    <li><a href="/books/4" class="btn btn-contained btn-white">職場工作</a></li>
+                    <li><a href="/books/5" class="btn btn-contained btn-white">成功法</a></li>
+                    <li><a href="/books/7" class="btn btn-contained btn-white">健康與生活風格</a></li>
+                    <li><a href="/books/12" class="btn btn-contained btn-white">教養學習</a></li>
+                    <li><a href="/books/8" class="btn btn-contained btn-white">社會思潮</a></li>
+                    <li><a href="/books/10" class="btn btn-contained btn-white">旅遊</a></li>
+                    <li><a href="/books/11" class="btn btn-contained btn-white">天下經典</a></li>
+                  </ul>
+                  <div class="spec-button mt-md-auto mt-20"><a href="/books" class="btn btn-text btn-black btn-decoration mx-auto">瀏覽所有主題</a></div>
+                </div>
+                <div class="banner"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>作者</span>
+            <button type="button" class="open-block"><i class="icon icon-arrow-down"></i></button> 
+            <div class="block">
+              <div class="container py-30">
+                <div class="anchor">
+                  <button type="button" class="btn btn-outlined btn-primary">
+                    華文作者
+                  </button>
+                  <button type="button" class="btn btn-outlined btn-primary">
+                    外文作者
+                  </button>
+                </div>
+                <div class="recommend">
+                  <ul>
+                    <li><a href="/author/1" class="btn btn-contained btn-white">蔡璧名</a></li>
+                    <li><a href="/author/2" class="btn btn-contained btn-white">杜書伍</a></li>
+                    <li><a href="/author/923" class="btn btn-contained btn-white">游能俊</a></li>
+                    <li><a href="/author/356" class="btn btn-contained btn-white">黃惠如</a></li>
+                    <li><a href="/author/914" class="btn btn-contained btn-white">魯里埃爾・魯比尼</a></li>
+                    <li><a href="/author/925" class="btn btn-contained btn-white">克里斯．米勒</a></li>
+                    <li><a href="/author/91" class="btn btn-contained btn-white">稻盛和夫</a></li>
+                  </ul>
+                  <div class="spec-button mt-md-auto mt-20"><a href="/authors" class="btn btn-text btn-black btn-decoration mx-auto">瀏覽所有作者</a></div>
+                </div>
+                <div class="banner"></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <span>閱讀</span> <button type="button" class="open-block"><i class="icon icon-arrow-down"></i></button> 
+            <div class="block">
+              <div class="container py-30">
+                <div class="anchor">
+                  <button type="button" class="btn btn-outlined btn-primary">
+                    精選閱讀
+                  </button>
+                </div>
+                <div class="recommend">
+                  <ul>
+                    <li><a href="/articles/1" class="btn btn-contained btn-white">財經趨勢</a></li>
+                    <li><a href="/articles/3" class="btn btn-contained btn-white">經營管理</a></li>
+                    <li><a href="/articles/2" class="btn btn-contained btn-white">科技創新</a></li>
+                    <li><a href="/articles/6" class="btn btn-contained btn-white">心理勵志</a></li>
+                    <li><a href="/articles/9" class="btn btn-contained btn-white">人文科普</a></li>
+                    <li><a href="/articles/4" class="btn btn-contained btn-white">職場工作</a></li>
+                    <li><a href="/articles/5" class="btn btn-contained btn-white">成功法</a></li>
+                    <li><a href="/articles/7" class="btn btn-contained btn-white">健康與生活風格</a></li>
+                    <li><a href="/articles/12" class="btn btn-contained btn-white">教養學習</a></li>
+                    <li><a href="/articles/8" class="btn btn-contained btn-white">社會思潮</a></li>
+                    <li><a href="/articles/10" class="btn btn-contained btn-white">旅遊</a></li>
+                  </ul>
+                  <div class="spec-button mt-md-auto mt-20"><a href="/articles" class="btn btn-text btn-black btn-decoration mx-auto">瀏覽所有閱讀</a></div>
+                </div>
+                <div class="banner"></div>
+              </div>
+            </div>
+          </li>
+          <li><a href="/about">關於我們</a></li>
+          <li>
+            <span>追蹤我們</span>
+            <button type="button" class="open-block"><i class="icon icon-arrow-down"></i></button> 
+            <div class="block">
+              <div class="container py-30">
+                <div class="anchor"><a href="https://www.cw.com.tw/member/newsletters#publish" class="btn btn-outlined btn-primary">訂閱電子報</a> <a href="https://www.facebook.com/cwbookec/" class="btn btn-outlined btn-primary">加入讀者俱樂部</a> <a href="https://www.instagram.com/bookcw1/" class="btn btn-outlined btn-primary">追蹤 Instagram</a></div>
+                <div class="banner"></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="collapse-nav">
+        <ul class="keywords">
+          <li><a href="https://books.cw.com.tw/book/845">晶片戰爭</a></li>
+          <li><a href="https://books.cw.com.tw/book/848">執行力的修練</a></li>
+          <li><a href="https://books.cw.com.tw/book/834">奧斯卡榮耀</a></li>
+        </ul>
+        <form class="search-group">
+          <input type="text" placeholder="請輸入關鍵字" name="search" value="" class="px-15 py-md-10 py-15">
+          <button type="submit" class="px-15 py-md-10 py-15"><i class="icon icon-search"></i></button>
+        </form>
+      </div>
+      <button type="submit" class="open-search px-10 ms-auto"><i class="icon icon-search"></i></button>
+    </div>
+  </header>
+
+  <section class="opening-module">
+    <div class="slick-opening">
+      <div>
+        <div class="ratio">
+          <img src="https://picsum.photos/1920/1080" class="landscape" alt="kv模組">
+          <img src="https://picsum.photos/828/1236" class="portrait" alt="kv模組">
+        </div>
+      </div>
+      <div>
+        <div class="ratio">
+          <img src="https://picsum.photos/1920/1080" class="landscape" alt="kv模組">
+          <img src="https://picsum.photos/828/1236" class="portrait" alt="kv模組">
+        </div>
+      </div>
+      <div>
+        <div class="ratio">
+          <img src="https://picsum.photos/1920/1080" class="landscape" alt="kv模組">
+          <img src="https://picsum.photos/828/1236" class="portrait" alt="kv模組">
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid px-0">
+      <div class="container text-center">
+        <h1 class="serif mt-0 mb-10">策展主標題</h1>
+        <p class="h2 my-0">抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完</p>
+      </div>
+    </div>
+  </section>
+
+  <article>
+    <section class="preface-module">
+      <div class="container">
+        <!-- 前言模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">前言模組</h2>
+        <div class="text-preface text-gray-500 line-height-180 my-0">
+          <p class="my-0">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+        </div>
+        <div class="img-detect my-30">
+          <img src="https://picsum.photos/1600/1072" loading="lazy" class="mx-auto" alt="前言模組">
+        </div>
+        <div class="text-detail text-gray-400 text-center">
+          <div class="fs-5 mt-0 mb-5">
+            作者作者作者作者作者作者
+          </div>
+          <time class="fs-5 d-block my-0">
+            2023-04-01
+          </time>
+        </div>
+      </div>
+    </section>
+    <section class="preface-module">
+      <div class="container">
+        <!-- 前言模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">前言模組</h2>
+        <div class="text-preface text-gray-500 line-height-180 my-0">
+          <p class="my-0">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+        </div>
+        <div class="img-detect my-30">
+          <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" class="mx-auto" alt="前言模組">
+        </div>
+        <div class="text-detail text-gray-400 text-center">
+          <div class="fs-5 mt-0 mb-5">
+            作者作者作者作者作者作者
+          </div>
+          <time class="fs-5 d-block my-0">
+            2023-04-01
+          </time>
+        </div>
+      </div>
+    </section>
+    <section class="article-module article-module-x1">
+      <div class="container">
+        <!-- 文章模組x1 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">文章模組x1</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="card-item">
+            <div class="card-img img-detect">
+              <img src="https://picsum.photos/1600/1072" loading="lazy" alt="前言模組">
+            </div>
+            <div class="card-body">
+              <h4 class="serif h3 mt-15 mb-0 text-center">
+                北方息冬嗎時車原吉方欠做南家現開
+              </h4>
+            </div>
+            <a href="#!" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="article-module article-module-x1">
+      <div class="container">
+        <!-- 文章模組x1 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">文章模組x1</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="card-item">
+            <div class="card-img img-detect">
+              <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+            </div>
+            <div class="card-body">
+              <h4 class="serif h3 mt-15 mb-0 text-center">
+                北方息冬嗎時車原吉方欠做南家現開
+              </h4>
+            </div>
+            <a href="#!" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="article-module article-module-x3">
+      <div class="container">
+        <!-- 文章模組x3 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">文章模組x3</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="card-group d-flex flex-wrap justify-content-center text-center">
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://picsum.photos/640/400" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  北方息冬嗎時車原吉方欠做南家現開
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://picsum.photos/640/400" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://picsum.photos/640/400" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://picsum.photos/640/400" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://picsum.photos/640/400" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="article-module article-module-x3">
+      <div class="container">
+        <!-- 文章模組x3 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">文章模組x3</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="card-group d-flex flex-wrap justify-content-center text-center">
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  北方息冬嗎時車原吉方欠做南家現開
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="card-item">
+              <div class="card-img">
+                <img src="https://www.books.com.tw/img/001/094/99/0010949912_bc_01.jpg" loading="lazy" alt="前言模組">
+              </div>
+              <div class="card-body">
+                <h4 class="serif mt-10 mb-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h4>
+              </div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slideshow-module">
+      <div class="container">
+        <!-- 照片slideshow模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">照片slideshow模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="slick-gallery-group d-md-flex align-items-end">
+            <div class="slick-gallery-img">
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+            </div>
+            <div class="slick-gallery-text my-0">
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slideshow-module">
+      <div class="container">
+        <!-- 照片slideshow模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">照片slideshow模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="slick-gallery-group d-md-flex align-items-end">
+            <div class="slick-gallery-img">
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+              <div>
+                <div class="ratio ratio-25by17">
+                  <img src="https://picsum.photos/1600/1072" loading="lazy" width="100%" alt="照片slideshow模組">
+                </div>
+              </div>
+            </div>
+            <div class="slick-gallery-text my-0">
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+              <div>
+                <h3 class="line-height-160 my-0">
+                  抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video-module">
+      <div class="container">
+        <!-- 影片模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">影片模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="video-with-decoration">
+            <div class="ratio ratio-16by9">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/-FDlhEMAB6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <h3 class="video-title my-0">
+              抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <!-- 圖表模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">圖表模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="code-frame">
+            <section class="formbox">
+              <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST"
+                target="nm_iframe" class="sf_form">
+                <input type="hidden" name="oid" value="00D2w000006VPp6">
+                <input type="hidden" name="retURL" value="http://www.cw.com.tw">
+                <!-- 這是選擇性的除錯元素。如果您要在除錯模式下測試，請取消註解這些行。 -->
+                <!-- <input type="hidden" name="debug" value="1">                             
+                <input type="hidden" name="debugEmail" value="sophiawu@cw.com.tw"> -->
+                <!-- 這是選擇性的除錯元素。如果您要在除錯模式下測試，請取消註解這些行。 end -->
+                <!-- 欄位們 -->
+                <div class="contentbox">
+                  <p><span class="rq">⁕</span>為必填欄位</p>
+          
+                  <!-- SF必填欄位不可刪除 -->
+                  <div class="inputbox">
+                    <label for="last_name">姓名<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <!-- 名字欄位系統會比對，相同的話無法寫入 -->
+                    <input id="last_name" maxlength="40" name="last_name" size="20" type="text" class="required" required
+                      placeholder="姓名" />
+                  </div>
+          
+                  <!-- SF必填欄位不可刪除 -->
+                  <div class="inputbox">
+                    <label for="mobile">手機<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <span class="error wrong errorContent">請填入數字</span>
+                    <span class="error short errorContent">請填入十碼手機號碼</span>
+                    <input id="mobile" name="mobile" size="20" type="tel" minlength="10" maxlength="10"
+                      placeholder="填寫範例:0911222333" class="required" required />
+          
+                  </div>
+          
+                  <!-- SF必填欄位不可刪除 -->
+                  <div class="inputbox">
+                    <label for="email">電子信箱<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <span class="error wrong errorMail">請確認電子信箱是否填寫正確</span>
+                    <input id="email" maxlength="80" name="email" size="20" type="text" class="required" required
+                      placeholder="填寫範例:name@abc.com" />
+                  </div>
+          
+                  <!-- SF必填欄位不可刪除 -->
+                  <div class="inputbox freetextbox">
+                    <label for="00N2w00000Hh3Ls">公司名稱<span class="rq">⁕</span></label>
+                    <span class="error blank errorCompany">此為必填欄位</span>
+                    <input id="00N2w00000Hh3Ls" maxlength="40" name="00N2w00000Hh3Ls" size="20" type="text" class="required" required placeholder="公司名稱" />
+                    
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-文字欄位-部門 -->
+                  <div class="inputbox specialbox freetextbox">
+                    <label for="department"><span class="specialContent">部門</span><span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <input id="department" maxlength="40" name="department" size="40" type="text" class="required" required />
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-文字欄位-職稱 -->
+                  <div class="inputbox specialbox freetextbox">
+                    <label for="title"><span class="specialContent">職稱</span><span class="rq">⁕</span></label>
+                    <span class="error blank errorTitle">此為必填欄位</span>
+                    <input id="title" maxlength="40" name="title" size="20" type="text" class="required" required />
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-下拉選單-產業別 -->
+                  <div class="inputbox specialbox selectbox">
+                    <span class="specialContent">產業別</span><span class="rq">⁕</span>
+                    <span class="error blank">此為必填欄位</span>
+                    <!-- 下拉選單 -->
+                    <select class="selectGroup full" id="industry" name="industry" title="產業別">
+                      <option value="">請選擇您的產業別</option>
+                      <option value="農、林、漁、牧業">農、林、漁、牧業</option>
+                      <option value="礦業及土石採取業">礦業及土石採取業</option>
+                      <option value="製造業">製造業</option>
+                      <option value="電力及燃氣供應業">電力及燃氣供應業</option>
+                      <option value="用水供應及污染整治業">用水供應及污染整治業</option>
+                      <option value="營建工程業">營建工程業</option>
+                      <option value="批發及零售業">批發及零售業</option>
+                      <option value="運輸及倉儲業">運輸及倉儲業</option>
+                      <option value="住宿及餐飲業">住宿及餐飲業</option>
+                      <option value="出版影音及資通訊業">出版影音及資通訊業</option>
+                      <option value="金融及保險業">金融及保險業</option>
+                      <option value="不動產業">不動產業</option>
+                      <option value="專業、科學及技術服務業">專業、科學及技術服務業</option>
+                      <option value="支援服務業">支援服務業</option>
+                      <option value="公共行政及國防；強制性社會安全">公共行政及國防；強制性社會安全</option>
+                      <option value="教育業">教育業</option>
+                      <option value="醫療保健及社會工作服務業">醫療保健及社會工作服務業</option>
+                      <option value="藝術、娛樂及休閒服務業">藝術、娛樂及休閒服務業</option>
+                      <option value="其他服務業">其他服務業</option>
+                    </select>
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-下拉選單-公司人數規模 -->
+                  <div class="inputbox specialbox selectbox">
+                    <span class="specialContent">公司人數規模</span><span class="rq">⁕</span>
+                    <span class="error blank errorAmount">此為必填欄位</span>
+                    <!-- 下拉選單 -->
+                    <select class="selectGroup" id="amount" name="amount" title="公司人數規模">
+                      <option value="">請選擇</option>
+                      <option value="10人以下">10人以下</option>
+                      <option value="10~50人">10~50人</option>
+                      <option value="50~100人">50~100人</option>
+                      <option value="100~300人">100~300人</option>
+                      <option value="300~500人">300~500人</option>
+                      <option value="500人以上">500人以上</option>
+                    </select>
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-單選題-性別 -->
+                  <div class="inputbox specialbox radiobox">
+                    <label for="gender"><span class="specialContent">性別</span><span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <!-- 如果不想呈現一列兩個選項 請把flexbox刪除 -->
+                    <div class="selects genderbox_selects fullbox flexbox">
+                      <!-- 1 START -->
+                      <div>
+                        <label for="gender_1" class="radiolabel">
+                          <input type="radio" name="gender" class="required" id="gender_1" value="生理男性" >
+                          <span class="checkmark"></span>
+                          <span>生理男性</span>
+                        </label>
+                      </div>
+                      <!-- 1 END -->
+                      <!-- 2 START -->
+                      <div>
+                        <label for="gender_2" class="radiolabel">
+                          <input type="radio" name="gender" id="gender_2" value="生理女性" class="required">
+                          <span class="checkmark"></span>
+                          <span>生理女性</span>
+                        </label>
+                      </div>
+                      <!-- 2 END -->
+          
+                    </div>
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-單選題-場次 -->
+                  <div class="inputbox specialbox radiobox sessionbox">
+                    <label for="session">場次<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <!-- 如果不想呈現一列兩個選項 請把flexbox刪除 -->
+                    <div class="selects sessionbox_selects fullbox flexbox">
+                      <!-- 1 START -->
+                      <div>
+                        <label for="session_1" class="radiolabel">
+                          <input type="radio" name="session" class="required" id="session_1" value="場次1" >
+                          <span class="checkmark"></span>
+                          <span>場次1</span>
+                        </label>
+                      </div>
+                      <!-- 1 END -->
+                      <!-- 2 START -->
+                      <div>
+                        <label for="session_2" class="radiolabel">
+                          <input type="radio" name="session" id="session_2" value="場次2" class="required">
+                          <span class="checkmark"></span>
+                          <span>場次2</span>
+                        </label>
+                      </div>
+                      <!-- 2 END -->
+          
+                    </div>
+                  </div>
+          
+                  <!-- 單選題-飲食習慣 -->
+                  <div class="inputbox specialbox radiobox foodbox">
+                    <label for="food">飲食習慣<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+          
+                    <!-- 如果不想呈現一列兩個選項 請把flexbox刪除 -->
+                    <div class="selects foodbox_selects fullbox flexbox">
+                      <!-- 1 START -->
+                      <div>
+                        <label for="food_1" class="radiolabel">
+                          <input type="radio" name="food" class="required" id="food_1" value="葷食" >
+                          <span class="checkmark"></span>
+                          <span>葷食</span>
+                        </label>
+                      </div>
+                      <!-- 1 END -->
+                      <!-- 2 START -->
+                      <div>
+                        <label for="food_2" class="radiolabel">
+                          <input type="radio" name="food" id="food_2" value="素食" class="required">
+                          <span class="checkmark"></span>
+                          <span>素食</span>
+                        </label>
+                      </div>
+                      <!-- 2 END -->
+          
+                    </div>
+                  </div>
+          
+                  <!-- 文字欄位-地址 -->
+                  <div class="inputbox specialbox numberbox">
+                    <label for="00NA9000000QIte">地址<span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <input id="00NA9000000QIte" name="00NA9000000QIte" type="text" class="required" required />
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-文字欄位-年齡 -->
+                  <div class="inputbox specialbox numberbox">
+                    <label for="age"><span class="specialContent">年齡</span><span class="rq">⁕</span></label>
+                    <span class="error blank">此為必填欄位</span>
+                    <span class="error wrong errorContent">請填入數字</span>
+                    <input id="age" name="age" size="20" type="text" minlength="1" maxlength="3" class="required" required
+                      placeholder="請填入數字" />
+                  </div>
+          
+                  <!-- 需寫入備註欄的特殊欄位-複選題 -->
+                  <div class="inputbox specialbox checkbox mutibox">
+                    <span class="specialContent">您如何得知此活動？</span><span class="rq">⁕</span>
+                    <span class="error blank errorNeeds">此為必填欄位</span>
+                    <!-- 如果不想呈現一列兩個選項 請把flexbox刪除 -->
+                    <div class="selects mutibox_selects needsbox_selects fullbox flexbox">
+                      <!-- 複選題選項1 START -->
+                      <div>
+                        <label>
+                          <input type="checkbox" name="needs" id="needs_1" value="朋友推薦">
+                          <span class="checkmark"></span>
+                          朋友推薦
+                        </label>
+                      </div>
+                      <!-- 複選題選項1 END -->
+                      <!-- 複選題選項2 START -->
+                      <div>
+                        <label>
+                          <input type="checkbox" name="needs" value="FB廣告" id="needs_2">
+                          <span class="checkmark"></span>
+                          FB廣告
+                        </label>
+                      </div>
+                      <!-- 複選題選項2 END -->
+                      <!-- 複選題選項3 START -->
+                      <div>
+                        <label>
+                          <input type="checkbox" name="needs" value="EDM/電子報" id="needs_3">
+                          <span class="checkmark"></span>
+                          EDM/電子報
+                        </label>
+                      </div>
+                      <!-- 複選題選項3 END -->
+                      <!-- 複選題選項4 START -->
+                      <div>
+                        <label>
+                          <input type="checkbox" name="needs" value="KOL推薦" id="needs_4">
+                          <span class="checkmark"></span>
+                          KOL推薦
+                        </label>
+                      </div>
+                      <!-- 複選題選項4 END -->
+                    </div>
+                  </div>
+                  <div class="checkbox">
+                    <div>
+                      <label>
+                        <input type="checkbox" name="policy" value="yes" id="policy">
+                        <span class="checkmark"></span>我已閱讀並同意個資聲明<span class="rq">⁕</span>
+                        <span class="error blank errorPolicy">此為必填欄位</span>
+                      </label>
+                    </div>
+                  </div>
+                  <p class="policyword">
+                    當您填表完成簽名或勾選﹝我已閱讀並同意﹞並送出資料時，即表示您已閱讀、了解並同意本聲明暨同意書的所有內容。<br>本活動由【客戶名稱】與【天下雜誌股份有限公司】（以下統稱我們）為本服務之目的向您蒐集、處理、利用您的資料包括您的【姓名、電話、Email、工作資訊或其他得以直接或間接識別您個人之資料】，通過遞交此表格，您確認同意我們按照隱私權聲明存儲及處理您的個人資料。【客戶名稱】可能會使用您的個人資料作營銷用途。<br>您可依個人資料保護法規定，就您的個人資料向我們行使下列權利：
+                    (1)查詢或請求閱覽(2)請求製給複製本(3)請求補充或更正(4)請求停止蒐集、處理及利用(5)請求刪除。關於您的權益如有任何疑慮，敬請詳閱天下雜誌<a href="https://event.cw.com.tw/salesforce/年份+客戶英文識別名/policy.html" target="_blank">隱私權同意書(個人資料聲明同意書)</a>。
+                  </p>
+                  <!-- 以下是隱藏的欄位放的div -->
+                  <div class="hiddenbox">
+                    同意個資聲明:
+                    <!-- 依user勾選同意與否帶入對應的值 -->
+                    <input id="00N2w00000Hh3Kk" maxlength="80" name="00N2w00000Hh3Kk" size="20" type="text" value="無" />
+                    活動名稱:
+                    <!-- 更換sf活動名稱 預先填好不開放給user填寫 -->
+                    <input id="00N2w00000Hh3MH" maxlength="80" name="00N2w00000Hh3MH" size="20" type="text" value="SF活動名稱" />
+                    公司=任職單位:
+                    <!-- 公司欄位的值帶過來 -->
+                    <input id="company" name="company" type="text" value="CW" />
+          
+                    報名日期:<span class="dateInput dateOnlyInput"><input id="00N2w00000Hh3C1" name="00N2w00000Hh3C1" size="12"
+                        type="text" /></span>
+          
+                    活動類型:<textarea id="00N2w00000Hh3MW" name="00N2w00000Hh3MW" rows="3" type="text" wrap="soft"></textarea>
+          
+                    名單到期日:<span style="font-size: 80%;">(預先填好不開放給user填寫)</span><span class="dateInput dateOnlyInput"><input
+                        id="00N2w00000Hh3Kz" name="00N2w00000Hh3Kz" size="12" type="text" value="2025/12/31" /></span>
+          
+                    同意行銷:
+                    <select id="00N2w00000Hh3NF" name="00N2w00000Hh3NF" title="同意行銷">
+                      <option value="" selected>--無--</option>
+                      <option value="同意">同意</option>
+                      <option value="不同意">不同意</option>
+                      <option value="待確認">待確認</option>
+                    </select>
+          
+                    取得BU:
+                    <select id="00N2w00000Hh3IA" name="00N2w00000Hh3IA" title="取得BU">
+                      <option value="">--無--</option>
+                      <option value="集團">集團</option>
+                      <option value="天下" selected>天下</option>
+                      <option value="親子">親子</option>
+                      <option value="康健">康健</option>
+                      <option value="Cheers">Cheers</option>
+                    </select>
+          
+                    <p>以下為 【付費活動必填欄位】</p>
+          
+                    會員帳號:<input id="00N2w00000Hka6z" maxlength="80" name="00N2w00000Hka6z" size="20" type="text" />
+          
+                    訂單資訊:<textarea id="00N2w00000DOPqA" name="00N2w00000DOPqA" rows="3" type="text" wrap="soft"></textarea>
+          
+                    <p style="border-top: 1px dotted #666; padding-top: 1rem; margin-top: 2rem;">以下為【非必填欄位】</p>
+          
+                    從事行業:<input id="00N2w00000Hh3BS" maxlength="255" name="00N2w00000Hh3BS" size="20" type="text" />
+          
+                    活動日期:<span class="dateInput dateOnlyInput"><input id="00N2w00000Hh3MM" name="00N2w00000Hh3MM" size="12"
+                        type="text" /></span>
+          
+                    活動區域:<textarea id="00N2w00000Hh3MR" name="00N2w00000Hh3MR" rows="3" type="text" wrap="soft"></textarea>
+                    飲食習慣 #00NA9000000QItZ:<input id="00NA9000000QItZ" name="00NA9000000QItZ" type="text" /><br>
+                    備註 #00N2w00000Hh3Mv:<textarea id="00N2w00000Hh3Mv" name="00N2w00000Hh3Mv" rows="3" type="text" wrap="soft"></textarea>
+          
+                    活動備註1 #00NA9000000QIto:<textarea id="00NA9000000QIto" name="00NA9000000QIto" rows="3" type="text" wrap="soft"></textarea><br>
+                    活動備註2 #00NA9000000QItf:<textarea id="00NA9000000QItf" name="00NA9000000QItf" rows="3" type="text" wrap="soft"></textarea><br>
+                    活動備註3 #00NA9000000QItt:<textarea id="00NA9000000QItt" name="00NA9000000QItt" rows="3" type="text" wrap="soft"></textarea><br>
+                    活動建議 #00NA9000000QItj:<textarea id="00NA9000000QItj" name="00NA9000000QItj" rows="3" type="text" wrap="soft"></textarea><br>
+                    
+          
+                    subBU:<textarea id="00N2w00000Hh3LO" name="00N2w00000Hh3LO" rows="3" type="text" wrap="soft"></textarea>
+          
+                    廣告客戶名稱:<textarea id="00N2w00000Hh3Ld" name="00N2w00000Hh3Ld" rows="3" type="text" wrap="soft"></textarea>
+          
+                    名單來源:<textarea id="00N2w00000Hh3M7" name="00N2w00000Hh3M7" rows="3" type="text" wrap="soft"></textarea>
+          
+                    <div class="checkbox">
+                      <div><label><input type="checkbox" id="00N2w00000HiIrE" name="00N2w00000HiIrE" value="1"><span></span>是否為PR
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 以下是隱藏的欄位放的div end -->
+
+                  <button type="button" class="submitbtn" id="sendBtn">
+                    送出
+                  </button>
+
+                  <!-- <div class="g-recaptcha" data-sitekey="6LeXJx0gAAAAAFIG1jWyb9-kZkBPHMEd6zWyzE4o" data-size="normal"
+                    data-theme="light" data-callback="verify" data-expired-callback="verifyFail" data-error-callback="verifyFail">
+                  </div>
+                  <button type="button" class="submitbtn btnDisabled" id="">送出</button> -->
+
+                  <span class="error errorSubmit">* 請確認上方欄位皆已正確填寫</span>
+                  <input type="submit" name="submit" class="" id="sfBtn">
+                </div>
+                <!-- 欄位們 end -->
+                <!-- 為了不跳頁，用來放感謝頁的iframe -->
+                <div class="hiddenIframe" style="width: 100%; height: 100px; display: none;">
+                  <p>感謝頁載這兒</p>
+                  <iframe id="id_iframe" name="nm_iframe" width="0" height="0" frameBorder="0" style="width:100%; height: 100%"></iframe>
+                </div>
+                <!-- 為了不跳頁，用來放感謝頁的iframe end -->
+              </form>
+              <div class="tks cover dialog">
+                <div class="tks_con">
+                  <div>
+                    <p>感謝您的填寫<br>將會有專人與您聯繫</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+            <script type="text/javascript" src="https://event.cw.com.tw/salesforce/assets/js/jquery-1.7.2.min.js"></script>
+            <script type="text/javascript" src="https://event.cw.com.tw/salesforce/2022taiwanlifeforum/getdata_sf.js"></script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="full-image-module">
+      <!-- 單張大圖模組 -->
+      <div class="container">
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">單張大圖模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+        </div>
+      </div>
+      <div class="ratio ratio-16by9">
+        <img src="https://picsum.photos/1600/1072" alt="單張大圖模組">
+      </div>
+      <div class="section-title">
+        抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完抱飛把昌風且斤尼怪完
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <!-- 作者模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">作者模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="avatar-group d-flex flex-wrap justify-content-center">
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+            <div class="avatar-item">
+              <div class="ratio ratio-1by1">
+                <img src="https://i.pravatar.cc/300" alt="">
+              </div>
+              <div class="avatar-title line-height-180 mt-5 mb-0">吳迎春</div>
+              <a href="#!" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <!-- 特色模組 -->
+        <h2 class="title-decoration mt-0 mb-md-40 mb-20">特色模組</h2>
+        <div class="single-column">
+          <p class="text-gray-500 line-height-180 mt-0 mb-md-30 mb-20">
+            遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。遠歡穴幼教牛。步拉昔後因放戊方原請左鴨。戶立蝸學追「他豆立占怕」白話媽發星登結早才買，房怕燈夕幾牙首室，外字羽雨羊語科弓着几。
+          </p>
+          <div class="sticker-group d-flex flex-wrap justify-content-center">
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://www.cw.com.tw/assets_new/img/logo.png" alt="天下雜誌 Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://smiletaiwan.cw.com.tw/images/logo_blue.png" alt="微笑台灣 Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://csr.cw.com.tw/assets/images/LOGO.svg" alt="csr Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://okapi.books.com.tw/uploads/image/2015/12/source/12273-1449656391.png" alt="換日線 Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://opinion.cw.com.tw/assets/images/meta.jpg" alt="獨立評論 Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://futurecity.cw.com.tw/images/logo.svg" alt="換日線 Logo">
+            </a>
+            <a href="#!" target="_blank" rel="noopener noreferrer" class="ratio ratio-25by17 sticker-item">
+              <img src="https://csr.cw.com.tw/trips/_nuxt/logo--cws.0db37b27.png" alt="天下永續會 Logo">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <footer class="pt-40 pb-30 px-20">
+    <div class="px-md-0 px-20">
+      <div class="container px-md-30 pt-10">
+        <div class="row px-md-40 px-sm-20">
+          <div class="col-md">
+            <div class="row">
+              <div class="col-lg col-md-auto col-6">
+                <h4 class="mt-0 mb-20">天下雜誌出版</h4>
+                <ul>
+                  <li><a href="/about" class="btn btn-text btn-black btn-decoration">關於我們</a></li>
+                  <li><a href="https://member.cwg.tw/contact" target="_blank" rel="noopener noreferrer" class="btn btn-text btn-black btn-decoration">聯絡我們</a></li>
+                  <li><a href="https://sites.google.com/cw.com.tw/cwmagazine-authorization/main" target="_blank" rel="noopener noreferrer" class="btn btn-text btn-black btn-decoration">內容授權</a></li>
+                </ul>
+              </div>
+              <div class="col-lg col-md-auto col-6">
+                <h4 class="mt-0 mb-20">友站連結</h4>
+                <ul>
+                  <li><a href="https://www.cw.com.tw/" target="_blank" rel="noopener noreferrer" class="btn btn-text btn-black btn-decoration">天下雜誌</a></li>
+                  <li><a href="https://shop.cwbook.com.tw/" target="_blank" rel="noopener noreferrer" class="btn btn-text btn-black btn-decoration">天下網路書店</a></li>
+                </ul>
+              </div>
+              <div class="col-lg col-md-auto col-12">
+                <h4 class="mt-0 mb-20">追蹤天下雜誌出版</h4>
+                <ul class="social-group">
+                  <li><a href="https://www.facebook.com/cwbookclub/" class="btn btn-text btn-black"><i class="icon icon-facebook"></i> <span class="text-decoration">Facebook</span></a></li>
+                  <li><a href="https://www.instagram.com/bookcw1/" class="btn btn-text btn-black"><i class="icon icon-instagram"></i> <span class="text-decoration">Instagram</span></a></li>
+                  <li><a href="https://www.cw.com.tw/member/newsletters#publish" class="btn btn-text btn-black"><i class="icon icon-newsletter"></i> <span class="text-decoration">電子報</span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <h4 class="mt-0 mb-20">客服資訊</h4>
+            <ul>
+              <li>
+                讀者服務專線：<a href="tel:0226620332" class="btn btn-text btn-black btn-decoration">886-2-2662-0332</a>
+              </li>
+              <li>
+                服務時間：週一至週五 9:00－17:30
+              </li>
+              <li>
+                客服信箱：<a href="mailto:bill@cw.com.tw" class="btn btn-text btn-black btn-decoration">
+                  bill@cw.com.tw</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 h6 text-center title-spacing-1 my-0">
+      Copyright © 天下雜誌出版 All rights reserved
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="assets/js/feature.js"></script>
+</body>
+
+</html>

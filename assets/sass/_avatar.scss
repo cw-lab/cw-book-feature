@@ -1,0 +1,31 @@
+.avatar-group {
+  gap: 18px;
+  @include media-breakpoint-up(md) {
+    gap: 36px;
+  }
+}
+
+.avatar-item {
+  position: relative;
+  width: 140px;
+  text-align: center;
+  @include media-breakpoint-up(md) {
+    width: 180px;
+  }
+  .ratio {
+    border-radius: 50%;
+    img {
+      @at-root :hover#{&} {
+        width: 110%;
+        height: 110%;
+      }
+    }
+  }
+  .avatar-title {
+    font-size: 1.125rem;
+    transition: color 0.3s;
+  }
+  &:hover {
+    color: $blue-200;
+  }
+}

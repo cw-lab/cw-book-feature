@@ -1,0 +1,121 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  @include media-breakpoint-up(md) {
+    background-color: $white;
+  }
+  > .container {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $gray-100;
+    background-color: $white;
+    @include media-breakpoint-up(md) {
+      align-items: flex-end;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    @include media-breakpoint-down(md) {
+      padding-left: 10px;
+    }  
+    .hamburger {
+      z-index: 1;
+    }
+    a.brand {
+      position: relative;
+      display: block;
+      z-index: 1;
+      img {
+        display: block;
+        @include media-breakpoint-up(md) {
+          height: 50px;
+        }
+        @include media-breakpoint-down(md) {
+          height: 40px;
+        }
+      }
+    }
+    &::before {
+      @include beforeafter('', block);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $white;
+      border-bottom: 1px solid $gray-100;
+      transition: transform 0.5s $timing-function;
+      transform: translateX(-100%);
+    }
+  }
+  &.opened .container {
+    // border-bottom-color: transparent;
+    // background-color: transparent;
+    &::before {
+      transform: translateX(0%);
+    }
+  }
+  .collapse-nav {
+    display: flex;
+    margin-left: auto;
+    @include media-breakpoint-up(md) {
+      align-items: center;
+      column-gap: 30px;
+    }
+    @include media-breakpoint-down(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 0 20px 20px;
+      flex-direction: column-reverse;
+      background-color: $white;
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+      z-index: 1;
+      &.opened {
+        transform: translateY(0);
+      }
+    }
+  }
+  ul.keywords {
+    display: flex;
+    column-gap: 20px;
+    @include list(0, 10px 0, none);
+    li {
+      font-size: $h4;
+      @include media-breakpoint-up(md) {
+        font-size: $h5;
+      }
+      a {
+        color: $gray-300;
+        &::before {
+          @include beforeafter('#', inline);
+        }
+        &:hover {
+          color: $gray-400;
+        }
+      }
+    }
+  }
+  &.scroll {
+    > .container {
+      @include media-breakpoint-up(md) {
+        padding-top: 15px;
+      }
+    }
+    .collapse-nav {
+      margin-left: 0;
+    }
+    ul.keywords {
+      @include media-breakpoint-up(md) {
+        display: none;
+      }
+    }
+  }
+}

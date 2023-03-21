@@ -1,0 +1,24 @@
+.reading-background {
+  background-color: $gray-100;
+  .inner-page & {
+    @include media-breakpoint-down(md) {
+      margin-left: -$container-padding-x;
+      margin-right: -$container-padding-x;
+    }
+  }
+  .reading-top,
+  .reading-bottom {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    .inner-page & {
+      height: 10px;
+    }
+  }
+  .reading-top {
+    top: 0;
+  }
+  .reading-bottom {
+    top: 100%;
+  }
+}

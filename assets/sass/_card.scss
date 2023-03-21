@@ -1,0 +1,58 @@
+.card-group {
+  gap: 20px 30px;
+  @include media-breakpoint-up(md) {
+    gap: 30px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-left: -120px;
+    margin-right: -120px;
+  }
+  &.card-group-portrait {
+    width: 600px;
+    gap: 60px 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.card-item {
+  position: relative;
+  @at-root .article-module-x1 #{&} {
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+      border: 1px solid $gray-200;
+    }
+  }
+  @at-root .article-module-x3 #{&} {
+    width: calc((100% - 60px) / 3);
+    &.card-portrait {
+      width: 180px;
+      img {
+        border: 1px solid $gray-200;
+      }
+    }
+  }
+  .card-img {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @at-root .article-module-x3 #{&} {
+      @include media-breakpoint-down(md) {
+        padding: 5px;
+        background-color: $gray-100;
+      }
+      img {
+        max-width: 100%;
+        max-height: 200px;
+        margin: auto;
+      }
+    }
+  }
+  h4 {
+    position: relative;
+    @include lineclamp(2);
+    line-height: 160%;
+    z-index: 1;
+  }
+}

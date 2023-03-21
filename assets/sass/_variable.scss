@@ -1,0 +1,96 @@
+//
+$enable-grid-classes:         true !default;
+$enable-important-utilities:  true !default;
+
+// 欄位設定
+$grid-columns:        12 !default;
+$grid-gutter-width:   2.5rem !default;
+$container-padding-x: $grid-gutter-width * .5 !default;
+
+$timing-function:     cubic-bezier(.35, .7, 1, 1);
+
+// breakpoint
+$grid-breakpoints: (
+  '': 0px,
+  xs: 414px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1440px,
+) !default;
+
+// breakpoint 內，內文寬度
+$container-max-widths: (
+  xs: 100%,
+  sm: 100%,
+  md: 100%,
+  lg: 1170px,
+  xl: 1280px
+) !default;
+
+// 間距設定
+$spacer:  0.0625rem; //1px
+$spacers: (
+  "0":  $spacer * 0,
+  "5":  $spacer * 5,
+  "10": $spacer * 10,
+  "15": $spacer * 15,
+  "20": $spacer * 20,
+  "30": $spacer * 30,
+  "40": $spacer * 40,
+  "auto": auto,
+);
+
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+
+$border-radius:               .25rem !default;
+$border-radius-sm:            .2rem !default;
+$border-radius-lg:            .3rem !default;
+$border-radius-pill:          50rem !default;
+
+// ---------------------------------------------------------
+
+// header text 設定
+$h1: $spacer * 28; //28px
+$h2: $spacer * 20; //20px
+$h3: $spacer * 18; //18px
+$h4: $spacer * 16; //16px
+$h5: $spacer * 14; //14px
+$h6: $spacer * 12; //12px
+
+// ---------------------------------------------------------
+
+// 灰色階色碼
+$gray-100:        #F5F5F5 !default;
+$gray-200:        #D4D6D7 !default;
+$gray-300:        #ACADAD !default;
+$gray-400:        #4D4D4E !default;
+
+// 藍色階色碼
+$blue-100:        #F1FAFF !default;
+$blue-200:        #4694D1 !default;
+$blue-300:        #3170AA !default;
+
+// 藍色階色碼
+$orange-100:      #FFBB6B !default;
+$orange-200:      #F9A038 !default;
+$orange-300:      #ED860D !default;
+
+// 無彩色色碼
+$white:           #ffffff !default;
+$black:           #0F0F0F !default;
+$dark:            #231815 !default;
+
+// 社群軟體色碼
+$facebook:        #1877f2 !default;
+$google:          #EA4335 !default;
+$line:            #00c200 !default;
+$instagram:       #dd2a7b !default;
+$weibo:           #e6162d !default;
+$rss:             #ff5700 !default;
+$twitter:         #00acee !default;
+$whatapp:         #4fce5d !default;
