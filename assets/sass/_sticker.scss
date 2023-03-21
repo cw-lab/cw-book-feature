@@ -1,0 +1,27 @@
+.sticker-group {
+  gap: 20px 30px;
+  @include media-breakpoint-up(sm) {
+    gap: 50px;
+  }
+}
+
+.sticker-item {
+  width: calc( (100% - 40px) / 2 );
+  border: 1px solid $gray-100;
+  @include media-breakpoint-up(sm) {
+    width: calc( (100% - 100px) / 3 );
+    border: 0;
+  }
+  @include media-breakpoint-up(md) {
+    width: calc( (100% - 150px) / 4 );
+  }
+  @include media-breakpoint-up(lg) {
+    width: calc( (100% - 200px) / 5 );
+  }
+  img {
+    object-fit: contain;
+  }
+  &:hover {
+    border-color: $blue-200;
+  }
+}

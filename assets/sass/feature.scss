@@ -39,11 +39,17 @@ body {
 
 @import "button";
 @import "card";
+@import "slick";
 @import "avatar";
+@import "sticker";
 
 .img-detect {
   img {
+    max-width: 100%;
     max-height: 500px;
+    @include media-breakpoint-up(md) {
+      max-width: none;
+    }
     &.portrait {
       max-height: 350px;
     }
@@ -56,12 +62,12 @@ article {
   z-index: 1;
   > section {
     &:not(.full-image-module) {
-      padding-top: 60px;
+      padding-top: 30px;
       @include media-breakpoint-up(lg) {
         padding-top: 60px;
       }
       &::after {
-        margin-top: 60px;
+        margin-top: 30px;
         @include media-breakpoint-up(lg) {
           margin-top: 60px;
         }
@@ -69,7 +75,7 @@ article {
     }
     &::after {
       @include beforeafter;
-      width: 100%;
+      width: calc(100% - #{$grid-gutter-width});
       height: 1px;
       margin-left: auto;
       margin-right: auto;
@@ -80,6 +86,9 @@ article {
       @include media-breakpoint-up(lg) {
         max-width: 1280px;
       }
+    }
+    &:last-child::after {
+      height: 0;
     }
   }
   .container {
@@ -103,11 +112,11 @@ article {
     z-index: 2;
   }
   &::before {
-    background: linear-gradient(90deg, rgba($white, 1) 0%, rgba($white, 1) 43%, rgba($white, 0) 43%, rgba($white, 0) 57%, rgba($white, 1) 57%, rgba($white, 1) 100%);
+    background: linear-gradient(90deg, rgba($white, 1) 0%, rgba($white, 1) calc(50% - 150px), rgba($white, 0) calc(50% - 150px), rgba($white, 0) calc(50% + 150px), rgba($white, 1) calc(50% + 150px), rgba($white, 1) 100%);
   }
   &::after {
     background-image: url('../images/book-decoration.svg');
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -149,6 +158,10 @@ article {
       }
     }
   }
+}
+
+.single-column::after {
+  @include clear;
 }
 
 .preface-module {
