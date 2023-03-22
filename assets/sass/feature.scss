@@ -45,13 +45,18 @@ body {
 
 .img-detect {
   img {
-    max-width: 100%;
-    max-height: 500px;
-    @include media-breakpoint-up(md) {
-      max-width: none;
+    margin-left: auto;
+    margin-right: auto;
+    &:not(.portrait) {
+      @include media-breakpoint-up(md) {
+        max-height: 500px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 100%;
+      }
     }
     &.portrait {
-      max-height: 350px;
+      height: 350px;
     }
   }
 }
@@ -167,6 +172,52 @@ article {
 .preface-module {
   img {
     width: auto;
-    border: 1px solid $gray-200;
+  }
+}
+
+.video-module {
+  .video-with-decoration {
+    border-bottom: 5px solid $orange-200;
+  }
+}
+
+.full-image-module {
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 30px;
+    &::after {
+      margin-top: 30px;
+    }
+  }
+  .container-fluid {
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 60px;
+      background: linear-gradient(180deg, rgba($black, 0.9) 0%, rgba($black, 0) 100%);
+      z-index: 1;
+    }
+  }
+  h2, p, .fs-6 {
+    @include media-breakpoint-up(md) {
+      color: $white;
+    }
+  }
+  .section-title {
+    padding-top: 5px;
+    padding-left: $grid-gutter-width/2;
+    padding-right: $grid-gutter-width/2;
+    z-index: 1;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 35px 30px 15px;
+      text-shadow: 0px 0px 6px rgba($black, 0.25);
+      background: linear-gradient(180deg, rgba($black, 0) 0%, rgba($black, 0.5) 100%);
+    }
   }
 }

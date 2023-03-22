@@ -52,7 +52,6 @@
 
 .slick-gallery {
   position: relative;
-  max-width: 720px;
   width: calc(100% - 100px);
   margin-left: auto;
   margin-right: auto;
@@ -61,7 +60,16 @@
   @include media-breakpoint-up(md) {
     margin-bottom: calc(35px + .5rem);
   }
-
+  &:not(.slick-gallery-portrait) {
+    max-width: 720px;
+  }
+  &.slick-gallery-portrait {
+    max-width: 245px;
+    img {
+      width: auto;
+      height: 350px;
+    }
+  }
   img {
     display: block;
   }

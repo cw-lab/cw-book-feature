@@ -1,16 +1,18 @@
 .avatar-group {
-  gap: 18px;
+  gap: 20px;
   @include media-breakpoint-up(md) {
-    gap: 36px;
+    gap: 50px;
+    margin-left: -35px;
+    margin-right: -35px;
   }
 }
 
 .avatar-item {
   position: relative;
-  width: 140px;
+  width: 120px;
   text-align: center;
   @include media-breakpoint-up(md) {
-    width: 180px;
+    width: 150px;
   }
   .ratio {
     border-radius: 50%;
@@ -22,7 +24,6 @@
     }
   }
   .avatar-title {
-    font-size: 1.125rem;
     transition: color 0.3s;
   }
   &:hover {

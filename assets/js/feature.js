@@ -10,6 +10,9 @@ $(document).ready(() => {
       if ( $(this).parent().parent().parent().hasClass('card-group') ) {
         $(this).parent().parent().parent().addClass('card-group-portrait');
       }
+      if ( $(this).parent().parent().parent().hasClass('slick-gallery') ) {
+        $(this).parent().parent().parent().addClass('slick-gallery-portrait');
+      }
     }
   });
   

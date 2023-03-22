@@ -1,35 +1,40 @@
 .card-group {
-  gap: 20px 30px;
+  gap: 30px 20px;
   @include media-breakpoint-up(md) {
-    gap: 30px;
+    gap: 60px 30px;
   }
   @include media-breakpoint-up(lg) {
     margin-left: -120px;
     margin-right: -120px;
   }
   &.card-group-portrait {
-    max-width: 600px;
-    gap: 60px 30px;
     margin-left: auto;
     margin-right: auto;
+    @include media-breakpoint-up(md) {
+      max-width: 600px;
+    }
   }
 }
 .card-item {
   position: relative;
   @at-root .article-module-x1 #{&} {
-    width: min-content;
     margin-left: auto;
     margin-right: auto;
-    img {
-      border: 1px solid $gray-200;
+    &:not(.card-portrait) {
+      display: table;
+    }
+    &.card-portrait {
+      width: min-content;
     }
   }
   @at-root .article-module-x3 #{&} {
-    width: calc((100% - 60px) / 3);
-    &.card-portrait {
-      width: 180px;
-      img {
-        border: 1px solid $gray-200;
+    width: calc((100% - 20px) / 2);
+    @include media-breakpoint-up(sm) {
+      width: calc((100% - 60px) / 3);
+    }
+    @include media-breakpoint-up(md) {
+      &.card-portrait {
+        width: 180px;
       }
     }
   }
@@ -37,15 +42,52 @@
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    @at-root .article-module-x3 #{&} {
-      @include media-breakpoint-down(md) {
-        padding: 5px;
+    @at-root .article-module-x1 #{&} {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      &::before {
+        @include beforeafter;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
         background-color: $gray-100;
       }
       img {
-        max-width: 100%;
-        max-height: 200px;
-        margin: auto;
+        position: relative;
+        box-shadow: 2px 2px 6px rgba($gray-400, .2);
+        z-index: 1;
+      }
+    }
+    @at-root .article-module-x3 #{&} {
+      @include media-breakpoint-up(md) {
+      }
+      @include media-breakpoint-down(md) {
+        padding: 5px;
+        background-color: $gray-100;
+        &::before {
+          @include beforeafter;
+          padding-top: calc(10 / 16 * 100%);
+        }
+      }
+      img {
+        @include media-breakpoint-down(md) {
+          position: absolute;
+          top: 5px;
+          bottom: 5px;
+          left: 5px;
+          right: 5px;
+          width: calc(100% - 10px);
+          height: calc(100% - 10px);
+          object-fit: contain;
+        }
+        @include media-breakpoint-up(md) {
+          max-width: 100%;
+          max-height: 200px;
+          margin: auto;
+        }
       }
     }
   }
