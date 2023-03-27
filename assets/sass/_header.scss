@@ -53,6 +53,8 @@ header {
       transform: translateX(-100%);
     }
   }
+  @import 'social';
+  @import 'user';
   &.opened .container {
     // border-bottom-color: transparent;
     // background-color: transparent;
@@ -65,7 +67,7 @@ header {
     margin-left: auto;
     @include media-breakpoint-up(md) {
       align-items: center;
-      column-gap: 30px;
+      column-gap: 20px;
     }
     @include media-breakpoint-down(md) {
       position: absolute;
@@ -80,41 +82,6 @@ header {
       z-index: 1;
       &.opened {
         transform: translateY(0);
-      }
-    }
-  }
-  ul.keywords {
-    display: flex;
-    column-gap: 20px;
-    @include list(0, 10px 0, none);
-    li {
-      font-size: $h4;
-      @include media-breakpoint-up(md) {
-        font-size: $h5;
-      }
-      a {
-        color: $gray-300;
-        &::before {
-          @include beforeafter('#', inline);
-        }
-        &:hover {
-          color: $gray-400;
-        }
-      }
-    }
-  }
-  &.scroll {
-    > .container {
-      @include media-breakpoint-up(md) {
-        padding-top: 15px;
-      }
-    }
-    .collapse-nav {
-      margin-left: 0;
-    }
-    ul.keywords {
-      @include media-breakpoint-up(md) {
-        display: none;
       }
     }
   }

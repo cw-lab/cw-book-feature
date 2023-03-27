@@ -1,0 +1,70 @@
+.member {
+  position: relative;
+  .open-user {
+    padding: .5rem;
+    color: $gray-400;
+    background-color: transparent;
+    border: 0;
+    appearance: none;
+    i.icon {
+      display: block;
+      @include media-breakpoint-up(md) {
+        font-size: $h2 * 1.2;
+      }
+      @include media-breakpoint-down(md) {
+        font-size: $h2 * 1.125;
+        font-weight: 600;
+      }
+    }
+  }
+  .user-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    padding-top: .625rem;
+    margin-right: -.625rem;
+    line-height: 1.25;
+    z-index: 1;
+  }
+  ul {
+    @include list(0, .625rem, none);
+    position: relative;
+    width: max-content;
+    border: 1px solid $gray-200;
+    background-color: white;
+    &:first-child {
+      &::before,
+      &::after {
+        @include beforeafter;
+        position: absolute;
+        bottom: 100%;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+      &::before {
+        right: 18.5px;
+        border-width: 0 10.5px 11.5px 10.5px;
+        border-color: transparent transparent $gray-200 transparent;
+        z-index: -1;
+      }
+      &::after {
+        right: 20px;
+        border-width: 0 9px 10px 9px;
+        border-color: transparent transparent white transparent;
+      }
+    }
+    + ul {
+      border-top: 0;
+    }
+    a {
+      display: block;
+      padding: .625rem .875rem;
+      color: currentColor;
+      &:hover {
+        color: $blue-200;
+      }
+    }
+  }
+}

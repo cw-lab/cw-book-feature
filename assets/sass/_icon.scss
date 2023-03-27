@@ -3,6 +3,7 @@
 $icomoon-font-family: "publishing" !default;
 $icomoon-font-path: "../fonts" !default;
 
+$icon-user:         "\e90f";
 $icon-youtube:      "\e900";
 $icon-arrow-left:   "\e901";
 $icon-arrow-right:  "\e902";
@@ -44,6 +45,12 @@ $icon-twitter:      "\e90e";
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user {
+  &:before {
+    content: $icon-user;     
+  }
 }
 
 .icon-play {

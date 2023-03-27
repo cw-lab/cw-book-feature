@@ -19,6 +19,7 @@ $hamburger: (
     height: map-get($hamburger, unit);
     background-color: $dark;
     border-radius: 10px;
+    transform: all 0.3s;
     + span {
       margin-top: map-get($hamburger, gap);
     }
@@ -29,22 +30,20 @@ $hamburger: (
       }
     }
   }
-  @include media-breakpoint-down(md) {
-    &.opened {
-      span {
-        width: map-get($hamburger, width) * 0.625;
-        // height: map-get($hamburger, unit) - 1px;
-        margin-top: 0;
-        &:nth-child(1) {
-          transform: rotate(-45deg) translate(-3px, 0px);
-        }
-        &:nth-child(2) {
-          display: none;
-        }
-        &:nth-child(3) {
-          transform: rotate(45deg) translate(-2.5px, 0.5px);
-        }
-      }      
+  &.opened {
+    span {
+      width: map-get($hamburger, width) * 0.625;
+      // height: map-get($hamburger, unit) - 1px;
+      margin-top: 0;
+      &:nth-child(1) {
+        transform: rotate(-45deg) translate(-3px, 0px);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: rotate(45deg) translate(-2.5px, 0.5px);
+      }
     }
   }
 }

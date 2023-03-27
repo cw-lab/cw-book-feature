@@ -3,6 +3,7 @@ nav.menu {
   top: 67px;
   left: 0;
   width: 100%;
+  max-width: 450px;
   height: calc(100% - 67px);
   background-color: $white;
   border-bottom: 1px solid $gray-200;
@@ -17,28 +18,9 @@ nav.menu {
     @include list(0, 0, none);
   }
   > ul {
-    @include media-breakpoint-up(md) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-    @include media-breakpoint-up(lg) {
-      gap: 20px;
-    }
     > li {
-      @include media-breakpoint-up(md) {
-        padding-left: 15px;
-        padding-right: 15px;
-      }
-      @include media-breakpoint-up(lg) {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-      @include media-breakpoint-down(md) {
-        position: relative;
-        margin: 20px 0;
-      }
+      position: relative;
+      margin: 20px 0;
       > a, > span, > button {
         display: block;
         width: 100%;
@@ -49,17 +31,6 @@ nav.menu {
         line-height: inherit;
         background-color: transparent;
         border: 0;
-        @include media-breakpoint-up(md) {
-          padding: 16px 0;
-          border: solid transparent;
-          border-width: 4px 0;
-        }
-      }
-      > span, > button {
-        cursor: pointer;
-        @include media-breakpoint-up(md) {
-          transition: color 0.3s, background 0.3s, border-color 0.3s;
-        }
       }
       > .open-block {
         position: absolute;
@@ -74,9 +45,6 @@ nav.menu {
         background-color: transparent;
         border: 0;
         appearance: none;
-        @include media-breakpoint-up(md) {
-          display: none;
-        }
         i.icon {
           display: block;
           padding: 17px 40px;
@@ -89,34 +57,19 @@ nav.menu {
         }
       }
       > .block {
+        display: none;
+        padding-left: 10px;
+        padding-right: 10px;
         background-color: $gray-100;
-        @include media-breakpoint-up(md) {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          display: none;
-          width: 100%;
-          box-shadow: 0 2px 4px rgba($black, .1);
-        }
-        @include media-breakpoint-down(md) {
-          display: none;
-          padding-left: 10px;
-          padding-right: 10px;
-        }
         .container {
           max-width: 1130px;
-          @include media-breakpoint-up(md) {
-            display: flex;
-          }
           > div {
             white-space: nowrap;
             &.anchor {
               .btn {
+                width: 100%;
                 font-weight: 700;
-                @include media-breakpoint-down(md) {
-                  width: 100%;
-                  line-height: 2.125;
-                }
+                line-height: 2.125;
                 +.btn {
                   margin-top: 10px;
                 }
@@ -127,22 +80,11 @@ nav.menu {
               flex-wrap: wrap;
               align-content: space-between;
               width: 100%;
-              @include media-breakpoint-up(md) {
-                max-width: 580px;
-                margin-left: 40px;
-                margin-right: 100px;
-              }
               > ul {
                 display: flex;
                 flex-wrap: wrap;
-                @include media-breakpoint-up(md) {
-                  margin-bottom: 30px;
-                  gap: 10px;
-                }
-                @include media-breakpoint-down(md) {
-                  margin-top: 20px;
-                  gap: 20px 10px;
-                }
+                gap: 20px 10px;
+                margin-top: 20px;
                 a {
                   padding-left: 14px;
                   padding-right: 14px;
@@ -158,10 +100,8 @@ nav.menu {
               }
             }
             &.banner {
+              display: none;
               margin-left: auto;
-              @include media-breakpoint-down(md) {
-                display: none;
-              }
               a {
                 display: inline-block;
                 + a {
@@ -180,12 +120,6 @@ nav.menu {
         > a, > span, > button {
           font-weight: 500;
           border-bottom-color: $blue-200;
-        }
-        > .block {
-          @include media-breakpoint-up(md) {
-            display: block;
-            height: auto !important;
-          }
         }
       }
     }

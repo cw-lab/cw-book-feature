@@ -32,9 +32,10 @@ body {
 @import "ratio";
 
 @import "header";
+@import "footer";
 @import "search";
 @import "nav";
-@import "footer";
+@import "black";
 @import "title";
 
 @import "button";
@@ -120,8 +121,7 @@ article {
     background: linear-gradient(90deg, rgba($white, 1) 0%, rgba($white, 1) calc(50% - 150px), rgba($white, 0) calc(50% - 150px), rgba($white, 0) calc(50% + 150px), rgba($white, 1) calc(50% + 150px), rgba($white, 1) 100%);
   }
   &::after {
-    background-image: url('../images/book-decoration.svg');
-    background-position: center top;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzMwIiBoZWlnaHQ9IjEwIiB2aWV3Qm94PSIwIDAgMzMwIDEwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE1NC45MzggMTBDMTczLjU5NiAwLjY2ODAwMiAyMzguMzU3IDAuMjAwMDAyIDMxNS44NzUgMEgzMzBWMTBMMTU0LjkzOCAxMFpNMCAwLjAxNjIzNzZDNzQuODQzNiAwLjIzMDIwOSAxMzYuNzYzIDAuOTA5ODI2IDE1NC45MzggMTBMMCAxMEwwIDAuMDE2MjM3NloiIGZpbGw9IiNmZmYiLz4KPC9zdmc+Cg==);    background-position: center top;
     background-repeat: no-repeat;
     background-size: contain;
   }

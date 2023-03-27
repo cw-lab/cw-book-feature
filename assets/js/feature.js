@@ -18,8 +18,37 @@ $(document).ready(() => {
   
   // 漢堡
   $('.hamburger').click(function() {
+    $('.user-dropdown').slideUp();
     $(this).toggleClass('opened');
+    $('.black').toggleClass('opened');
     $(this).siblings('nav').toggleClass('opened');
+    setTimeout(() => {
+      $('.block').slideUp();
+      $('.open-block').removeClass('opened');
+    }, 200);
+  });
+  $('.open-block').click(function() {
+    $(this).parent().siblings().children('.open-block').removeClass('opened');
+    $(this).parent().siblings().children('.block').slideUp();
+    $(this).toggleClass('opened');
+    $(this).siblings('.block').slideToggle();
+  });
+  $('.open-user').click(function() {
+    $('.hamburger, nav, .black').removeClass('opened');
+    $(this).siblings('.user-dropdown').slideToggle();
+    setTimeout(() => {
+      $('.block').slideUp();
+      $('.open-block').removeClass('opened');
+    }, 200);
+  });
+  $('.black').click(function() {
+    $('.user-dropdown').slideUp();
+    $(this).removeClass('opened');
+    $('.hamburger, nav').removeClass('opened');
+    setTimeout(() => {
+      $('.block').slideUp();
+      $('.open-block').removeClass('opened');
+    }, 200);
   });
 
   // slick

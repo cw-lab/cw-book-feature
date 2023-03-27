@@ -1,34 +1,17 @@
 .social-group {
+	@include listreset;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    @include media-breakpoint-up(xs) {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .social-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        color: $gray-400;
-        @include media-breakpoint-up(md) {
-            min-width: 125px;
-        }
-        @include media-breakpoint-down(md) {
-            width: calc((100% - 30px) / 2);
-        }
-        &:hover {
-            color: $blue-200;
-        }
-        .icon {
-            font-size: 1.5rem;
-        }
-        .text {
-            text-decoration: underline;
-            text-underline-position: under;
-            text-decoration-thickness: from-font;
-        }
-    }
+    gap: 20px;
+	color: $gray-400;
+	font-size: 1.5rem;
+	a {
+		color: currentColor;
+		&:hover {
+			color: $blue-200;
+		}
+	}
+	i.icon {
+		display: block;
+	}
 }
