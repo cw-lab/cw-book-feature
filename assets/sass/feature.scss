@@ -67,6 +67,11 @@ body {
   }
 }
 
+.hashtag {
+  position: relative;
+  top: -140px; // 60+80
+}
+
 article {
   position: relative;
   background-color: $white;
