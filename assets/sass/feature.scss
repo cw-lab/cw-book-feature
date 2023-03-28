@@ -69,7 +69,10 @@ body {
 
 .hashtag {
   position: relative;
-  top: -140px; // 60+80
+  top: -110px; // 30+80
+  @include media-breakpoint-up(lg) {
+    top: -140px; // 60+80
+  }
 }
 
 article {

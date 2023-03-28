@@ -6640,7 +6640,13 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 
 .hashtag {
   position: relative;
-  top: -140px;
+  top: -110px;
+}
+
+@media (min-width: 1280px) {
+  .hashtag {
+    top: -140px;
+  }
 }
 
 article {
