@@ -6464,7 +6464,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   height: 180px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .slick-gallery.slick-gallery-portrait img {
     height: 350px;
   }
@@ -6569,17 +6569,9 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 
 .sticker-item {
   width: calc( (100% - 40px) / 2);
-  border: 1px solid #F5F5F5;
 }
 
 @media (min-width: 768px) {
-  .sticker-item {
-    width: calc( (100% - 100px) / 3);
-    border: 0;
-  }
-}
-
-@media (min-width: 1024px) {
   .sticker-item {
     width: calc( (100% - 150px) / 4);
   }
@@ -6621,7 +6613,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   height: 180px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .img-detect img.portrait {
     height: 350px;
   }

@@ -73,7 +73,7 @@
     img {
       width: auto;
       height: 180px;
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(sm) {
         height: 350px;
       }
     }

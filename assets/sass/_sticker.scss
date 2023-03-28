@@ -7,12 +7,7 @@
 
 .sticker-item {
   width: calc( (100% - 40px) / 2 );
-  border: 1px solid $gray-100;
   @include media-breakpoint-up(sm) {
-    width: calc( (100% - 100px) / 3 );
-    border: 0;
-  }
-  @include media-breakpoint-up(md) {
     width: calc( (100% - 150px) / 4 );
   }
   @include media-breakpoint-up(lg) {
