@@ -1,7 +1,13 @@
 $(document).ready(() => {
   $('img').each(function() {
-    const width = $(this).outerWidth();
-    const height = $(this).outerHeight();
+    let width = Number($(this).attr('width'));
+    let height = Number($(this).attr('height'));
+    if( !width ) {
+      width = $(this).outerWidth();
+    }
+    if( !height ) {
+      height = $(this).outerHeight();
+    }
     if( width < height ) {
       $(this).addClass('portrait');
       if ( $(this).parent().parent().hasClass('card-item') ) {
