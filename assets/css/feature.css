@@ -6460,7 +6460,13 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 
 .slick-gallery.slick-gallery-portrait img {
   width: auto;
-  height: 350px;
+  height: 180px;
+}
+
+@media (min-width: 1024px) {
+  .slick-gallery.slick-gallery-portrait img {
+    height: 350px;
+  }
 }
 
 .slick-gallery img {
@@ -6611,7 +6617,13 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 }
 
 .img-detect img.portrait {
-  height: 350px;
+  height: 180px;
+}
+
+@media (min-width: 1024px) {
+  .img-detect img.portrait {
+    height: 350px;
+  }
 }
 
 article {
@@ -6709,16 +6721,24 @@ article .container {
   bottom: 0;
   left: 0;
   right: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-shadow: 0px 0px 6px rgba(77, 77, 78, 0.2);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0)), to(rgba(15, 15, 15, 0.8)));
   background: linear-gradient(180deg, rgba(15, 15, 15, 0) 0%, rgba(15, 15, 15, 0.8) 100%);
   z-index: 1;
 }
 
+@media screen and (min-width: 768px) {
+  .opening-module .container-fluid, .opening-module .container-xs, .opening-module .container-sm, .opening-module .container-md, .opening-module .container-lg, .opening-module .container-xl {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .opening-module .container {
   max-width: 940px;
+  line-height: 1.4;
 }
 
 .opening-module .ratio img {
@@ -6744,6 +6764,26 @@ article .container {
 @media screen and (orientation: landscape) {
   .opening-module .ratio::before {
     padding-top: 56.25%;
+  }
+}
+
+.opening-module h1 {
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .opening-module h1 {
+    font-size: 1.75rem;
+  }
+}
+
+.opening-module p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .opening-module p {
+    font-size: 1.25rem;
   }
 }
 

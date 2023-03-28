@@ -71,7 +71,10 @@
     max-width: 245px;
     img {
       width: auto;
-      height: 350px;
+      height: 180px;
+      @include media-breakpoint-up(md) {
+        height: 350px;
+      }
     }
   }
   img {
