@@ -6401,6 +6401,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 .slick-arrow {
   padding: 10px;
   font-size: 0;
+  color: #0F0F0F;
   background-color: transparent;
   border: 0;
   overflow: hidden;
