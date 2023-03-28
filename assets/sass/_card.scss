@@ -63,6 +63,8 @@
         @include media-breakpoint-up(md) {
           max-width: 100%;
           max-height: 200px;
+          width: auto;
+          height: auto;
           margin: auto;
         }
       }
