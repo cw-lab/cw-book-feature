@@ -33,8 +33,19 @@ $(document).ready(() => {
     $(this).toggleClass('opened');
     $(this).siblings('.block').slideToggle();
   });
-  $('.open-user').click(function() {
+  $('.open-search').click(function() {
     $('.hamburger, nav, .black').removeClass('opened');
+    $(this).children().toggleClass('icon-close');
+    $('.collapse-nav').toggleClass('opened');
+    $('.user-dropdown').slideUp();
+    setTimeout(() => {
+      $('.block').slideUp();
+      $('.open-block').removeClass('opened');
+    }, 200);
+  });
+  $('.open-user').click(function() {
+    $('.hamburger, nav, .collapse-nav, .black').removeClass('opened');
+    $('.open-search i').removeClass('icon-close');
     $(this).siblings('.user-dropdown').slideToggle();
     setTimeout(() => {
       $('.block').slideUp();

@@ -1,5 +1,8 @@
 .member {
   position: relative;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
   .open-user {
     padding: .5rem;
     color: $gray-400;

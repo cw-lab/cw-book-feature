@@ -5402,6 +5402,12 @@ header .member {
   position: relative;
 }
 
+@media (max-width: 1023px) {
+  header .member {
+    display: none;
+  }
+}
+
 header .member .open-user {
   padding: .5rem;
   color: #4D4D4E;
