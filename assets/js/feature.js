@@ -21,7 +21,9 @@ $(document).ready(() => {
       }
     }
   });
-  
+  setTimeout(() => {
+    $('nav.menu').addClass('loaded');
+  }, 300);
   // 漢堡
   $('.hamburger').click(function() {
     $('.user-dropdown').slideUp();

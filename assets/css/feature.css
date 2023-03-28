@@ -5753,14 +5753,29 @@ nav.menu {
   height: calc(100% - 67px);
   background-color: #ffffff;
   border-bottom: 1px solid #D4D6D7;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  overflow: scroll hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  z-index: 1;
+}
+
+nav.menu ::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  nav.menu {
+    top: 80px;
+  }
+}
+
+nav.menu.loaded {
   -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
   transition: -webkit-transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
   transition: transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
   transition: transform 0.5s cubic-bezier(0.35, 0.7, 1, 1), -webkit-transform 0.5s cubic-bezier(0.35, 0.7, 1, 1);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-  overflow: scroll;
-  z-index: 1;
 }
 
 nav.menu.opened {
@@ -6312,7 +6327,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .article-module-x3 .card-item.card-portrait {
     width: 180px;
   }
@@ -6324,7 +6339,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   margin-right: auto;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .article-module-x3 .card-item .card-img::before {
     content: "";
     display: block;
@@ -6332,7 +6347,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .article-module-x3 .card-item .card-img img {
     position: absolute;
     top: 0;
@@ -6346,7 +6361,7 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .article-module-x3 .card-item .card-img img {
     max-width: 100%;
     max-height: 200px;
@@ -6608,7 +6623,8 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
 
 @media (max-width: 1023px) {
   .img-detect img:not(.portrait) {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -6725,7 +6741,7 @@ article .container {
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .opening-module .container-fluid, .opening-module .container-xs, .opening-module .container-sm, .opening-module .container-md, .opening-module .container-lg, .opening-module .container-xl {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -6754,7 +6770,7 @@ article .container {
 }
 
 .opening-module .ratio::before {
-  padding-top: 185.50725%;
+  padding-top: 146.8599%;
 }
 
 @media screen and (orientation: landscape) {
@@ -6767,7 +6783,7 @@ article .container {
   font-size: 1.25rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .opening-module h1 {
     font-size: 1.75rem;
   }
@@ -6777,7 +6793,7 @@ article .container {
   font-size: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .opening-module p {
     font-size: 1.25rem;
   }

@@ -7,10 +7,20 @@ nav.menu {
   height: calc(100% - 67px);
   background-color: $white;
   border-bottom: 1px solid $gray-200;
-  transition: transform 0.5s $timing-function;
   transform: translateX(-100%);
-  overflow: scroll;
+  overflow: scroll hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   z-index: 1;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  @include media-breakpoint-up(md) {
+    top: 80px;
+  }
+  &.loaded {
+    transition: transform 0.5s $timing-function;
+  }
   &.opened {
     transform: translateX(0%);
   }
