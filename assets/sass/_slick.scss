@@ -69,11 +69,15 @@
     max-width: 720px;
   }
   &.slick-gallery-portrait {
-    max-width: 245px;
-    img {
-      width: auto;
-      height: 180px;
-      @include media-breakpoint-up(sm) {
+    @include media-breakpoint-down(sm) {
+      .ratio > * {
+        object-fit: contain;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      max-width: 245px;
+      img {
+        width: auto;
         height: 350px;
       }
     }

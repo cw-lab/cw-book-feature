@@ -5259,7 +5259,13 @@ h6, .h6, .fs-6 {
 }
 
 .ratio-5by7.ratio::before {
-  padding-top: 140%;
+  padding-top: 68%;
+}
+
+@media (min-width: 768px) {
+  .ratio-5by7.ratio::before {
+    padding-top: 140%;
+  }
 }
 
 .ratio-25by17.ratio::before {
@@ -6473,17 +6479,19 @@ nav.menu > ul > li:hover > a, nav.menu > ul > li:hover > span, nav.menu > ul > l
   max-width: 720px;
 }
 
-.slick-gallery.slick-gallery-portrait {
-  max-width: 245px;
-}
-
-.slick-gallery.slick-gallery-portrait img {
-  width: auto;
-  height: 180px;
+@media (max-width: 767px) {
+  .slick-gallery.slick-gallery-portrait .ratio > * {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 @media (min-width: 768px) {
+  .slick-gallery.slick-gallery-portrait {
+    max-width: 245px;
+  }
   .slick-gallery.slick-gallery-portrait img {
+    width: auto;
     height: 350px;
   }
 }
