@@ -23,6 +23,7 @@ body {
   color: $gray-400;
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   line-height: 1.5;
+  @include title-spacing(1);
 }
 
 .serif {

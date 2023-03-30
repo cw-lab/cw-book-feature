@@ -1,3 +1,6 @@
+AOS.init();
+let btnScrollClicked = -1;
+
 $(document).ready(() => {
   $('img').each(function() {
     let width = Number($(this).attr('width'));
@@ -70,14 +73,21 @@ $(document).ready(() => {
     }, 200);
   });
 
+  $('.btn-scroll').click(function () {
+    btnScrollClicked ++;
+    const articleTop = $('article').offset().top - 80;
+    $(document).scrollTop(articleTop);
+    $('.btn-scroll').fadeOut();
+  });
+
   // slick
   $('.slick-opening').slick({
     dots: false,
     arrows: false,
     infinite: true,
     speed: 1000,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
+    autoplaySpeed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
   });
@@ -92,3 +102,17 @@ $(document).ready(() => {
     slidesToScroll: 1,
   });
 });
+
+const callback = (entries, observer) => {
+  entries.forEach(entry => {
+    console.log();
+    if (entry.isIntersecting) {
+      $('.btn-scroll').fadeOut();
+    } else if (btnScrollClicked) {
+      $('.btn-scroll').fadeIn();
+    }
+  });
+}
+const observer = new IntersectionObserver(callback);
+const target = document.querySelector('article');
+observer.observe(target);

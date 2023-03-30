@@ -370,6 +370,7 @@ body {
   color: #4D4D4E;
   font-family: 'Roboto', 'Noto Sans TC', sans-serif;
   line-height: 1.5;
+  letter-spacing: 0.0625rem;
 }
 
 .serif {
@@ -6713,6 +6714,12 @@ article .container {
   z-index: 1;
 }
 
+@media (min-aspect-ratio: 2 / 1) {
+  .opening-module {
+    max-height: none;
+  }
+}
+
 .opening-module::before, .opening-module::after {
   content: "";
   display: block;
@@ -6733,10 +6740,6 @@ article .container {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: contain;
-}
-
-.opening-module.detect-footer {
-  position: relative;
 }
 
 .opening-module .container-fluid, .opening-module .container-xs, .opening-module .container-sm, .opening-module .container-md, .opening-module .container-lg, .opening-module .container-xl {
@@ -6762,6 +6765,16 @@ article .container {
 .opening-module .container {
   max-width: 940px;
   line-height: 1.4;
+}
+
+.opening-module .ratio {
+  max-height: calc(100vh - 200px);
+}
+
+@media (min-aspect-ratio: 2 / 1) {
+  .opening-module .ratio {
+    max-height: none;
+  }
 }
 
 .opening-module .ratio img {
@@ -6808,6 +6821,70 @@ article .container {
   .opening-module p {
     font-size: 1.25rem;
   }
+}
+
+.btn-scroll {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  margin-left: -1.25rem;
+  color: white;
+  font-size: 1.25rem;
+  background-color: #3170AA;
+  border: 0;
+  border-radius: 50%;
+  -webkit-animation: bounce 2s infinite ease;
+          animation: bounce 2s infinite ease;
+  z-index: 10;
+}
+
+@media (max-aspect-ratio: 2 / 1) {
+  .btn-scroll {
+    display: none !important;
+    opacity: 0 !important;
+  }
+}
+
+.btn-scroll:hover {
+  background-color: #4694D1;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+.text-legend {
+  color: #ACADAD;
 }
 
 .single-column::after {
