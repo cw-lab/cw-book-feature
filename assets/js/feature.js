@@ -24,6 +24,9 @@ $(document).ready(() => {
       }
     }
   });
+  $('img').load(function() {
+    AOS.refresh();
+  });
   setTimeout(() => {
     $('nav.menu').addClass('loaded');
   }, 300);
